@@ -8,15 +8,15 @@ const SongItem = (props) => {
     const albumImage = album.images[1];
 
     return (
-        <div className={styles.root}>
-            <div className={styles.album}>
+        <div className="songitem-root">
+            <div className="songitem-album">
                 <img role="presentation" src={albumImage.url} />
-                <span className={styles.albumName}>{albumName}</span>
+                <span className="songitem-albumName">{albumName}</span>
             </div>
-            <div className={styles.songAndDescription}>
+            <div className="songitem-songAndDescription">
+                <span className="songitem-songDescription">Name: {songData.name}</span>
+                <span className="songitem-songDescription">Duration: {songData.duration_ms / 1000}</span>
                 <audio controls duration src={songData.preview_url}/>
-                <span className={styles.songDescription}>Name: {songData.name}</span>
-                <span className={styles.songDescription}>Duration: {songData.duration_ms / 1000}</span>
             </div>
         </div>
     )
