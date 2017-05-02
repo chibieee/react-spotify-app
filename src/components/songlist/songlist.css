@@ -1,0 +1,29 @@
+.songlist-root {
+    display: flex;
+    height: 290px;
+    width: 100%;;
+    overflow: auto;
+    margin-top: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.songlist-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.songlist-img {
+    height: 150px;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.songlist-description {
+    justify-content: center;
+    color: #d3d3d3;
+    font-size: 12px;
+    font-family: 'Lucida Sans Unicode', 'Lucdia Grande', sans-serif;
+    margin-left: 15px;
+}
